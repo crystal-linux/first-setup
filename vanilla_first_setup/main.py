@@ -33,7 +33,7 @@ class FirstSetupApplication(Adw.Application):
     """The main application singleton class."""
 
     def __init__(self):
-        super().__init__(application_id='io.github.vanilla-os.FirstSetup',
+        super().__init__(application_id='al.getcryst.FirstSetup',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
         self.create_action('quit', self.close, ['<primary>q'])
 
@@ -124,9 +124,10 @@ class FirstSetupApplication(Adw.Application):
 
 def main(version):
     """The application's entry point."""
-    if os.environ.get("USERNAME") in ["ubuntu", "vanillaos", "vanilla-os"]:
+    if os.environ.get("USERNAME") in ["crystal"]:
         logging.warning("Running in Live mode, closing...")
         sys.exit(0)
 
     app = FirstSetupApplication()
     return app.run(sys.argv)
+

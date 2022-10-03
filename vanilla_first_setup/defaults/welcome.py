@@ -20,7 +20,7 @@ from gi.repository import Gtk, Gio, GLib, Adw
 from vanilla_first_setup.utils.run_async import RunAsync
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/default-welcome.ui')
+@Gtk.Template(resource_path='/al/getcryst/FirstSetup/gtk/default-welcome.ui')
 class VanillaDefaultWelcome(Adw.Bin):
     __gtype_name__ = 'VanillaDefaultWelcome'
 
@@ -91,3 +91,4 @@ class VanillaDefaultWelcome(Adw.Bin):
 
     def get_finals(self):
         return {}
+

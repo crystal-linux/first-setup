@@ -73,8 +73,9 @@ class Processor:
                 return False
 
         autostart_file = os.path.expanduser(
-            "~/.config/autostart/io.github.vanilla-os.FirstSetup.desktop")
+            "~/.config/autostart/al.getcryst.FirstSetup.desktop")
         if os.path.exists(autostart_file):
             os.remove(autostart_file)
 
         return True
+

@@ -17,7 +17,7 @@
 from gi.repository import Gtk, Adw
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/dialog.ui')
+@Gtk.Template(resource_path='/al/getcryst/FirstSetup/gtk/dialog.ui')
 class VanillaDialog(Adw.Window):
     __gtype_name__ = 'VanillaDialog'
 
@@ -28,3 +28,4 @@ class VanillaDialog(Adw.Window):
         self.set_transient_for(window)
         self.set_title(title)
         self.label_text.set_text(text)
+

@@ -17,10 +17,11 @@
 from gi.repository import Gtk, Adw
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/progress.ui')
+@Gtk.Template(resource_path='/al/getcryst/FirstSetup/gtk/progress.ui')
 class VanillaProgress(Adw.Bin):
     __gtype_name__ = 'VanillaProgress'
 
     def __init__(self, window, **kwargs):
         super().__init__(**kwargs)
         self.__window = window
+

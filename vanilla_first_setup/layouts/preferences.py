@@ -21,7 +21,7 @@ from vanilla_first_setup.utils.run_async import RunAsync
 from vanilla_first_setup.dialog import VanillaDialog
 
 
-@Gtk.Template(resource_path='/io/github/vanilla-os/FirstSetup/gtk/layout-preferences.ui')
+@Gtk.Template(resource_path='/al/getcryst/FirstSetup/gtk/layout-preferences.ui')
 class VanillaLayoutPreferences(Adw.Bin):
     __gtype_name__ = 'VanillaLayoutPreferences'
 
@@ -91,3 +91,4 @@ class VanillaLayoutPreferences(Adw.Bin):
             finals["funcs"].extend(ws["final"])
 
         return finals
+

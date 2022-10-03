@@ -1,4 +1,4 @@
-project('io.github.vanilla-os.FirstSetup',
+project('al.getcryst.FirstSetup',
           version: '1.1.1',
     meson_version: '>= 0.59.0',
   default_options: [ 'warning_level=2',
