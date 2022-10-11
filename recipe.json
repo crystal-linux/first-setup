@@ -1,7 +1,7 @@
 {
     "log_file": "/etc/vanilla/first-setup.log",
-    "distro_name": "Vanilla OS",
-    "distro_logo": "io.github.vanilla-os.FirstSetup", 
+    "distro_name": "Crystal Linux",
+    "distro_logo": "al.getcryst.FirstSetup",
     "steps": {
         "welcome": {
             "template": "welcome"
@@ -61,7 +61,7 @@
         "nvidia": {
             "template": "yes-no",
             "display-conditions": [
-                "lspci | grep -i '.* vga .* nvidia .*'"
+                "lspci | grep -i '.* nvidia .*'"
             ],
             "icon": "video-display-symbolic",
             "title": "NVIDIA® Drivers",
