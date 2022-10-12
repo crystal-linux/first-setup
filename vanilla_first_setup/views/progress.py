@@ -22,7 +22,7 @@ from vanilla_first_setup.utils.run_async import RunAsync
 from vanilla_first_setup.views.tour import VanillaTour
 
 @Gtk.Template(resource_path='/al/getcryst/FirstSetup/gtk/progress.ui')
-class VanillaProgress(Adw.Bin):
+class VanillaProgress(Gtk.Box):
     __gtype_name__ = 'VanillaProgress'
 
     carousel_tour = Gtk.Template.Child()

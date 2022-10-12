@@ -2,6 +2,22 @@
     "log_file": "/etc/vanilla/first-setup.log",
     "distro_name": "Crystal Linux",
     "distro_logo": "al.getcryst.FirstSetup",
+    "pre_run": [],
+    "post_run": [],
+    "tour": {
+        "almost": {
+             "icon": "security-medium-symbolic",
+             "title": "On-Demand Immutability",
+             "description": "Vanilla OS features On-Demand Immutability, which blind your system against undesired modifications, being still fully accessible by you.",
+             "read_more_link": "https://documentation.vanillaos.org/docs/almost/"
+        },
+        "apx": {
+             "icon": "vanilla-container-terminal-symbolic",
+             "title": "Sub-System Ready To Go",
+             "description": "Vanilla OS comes with Apx, a new package manager which install the software in an integrated container to prevent host compromise.",
+             "read_more_link": "https://documentation.vanillaos.org/docs/apx/"
+        }
+    },
     "steps": {
         "welcome": {
             "template": "welcome"
@@ -61,7 +77,7 @@
         "nvidia": {
             "template": "yes-no",
             "display-conditions": [
-                "lspci | grep -i '.* nvidia .*'"
+                "lspci | grep -i '.* nvidia .*' | grep -v GF | grep -v GK "
             ],
             "icon": "video-display-symbolic",
             "title": "NVIDIA® Drivers",
