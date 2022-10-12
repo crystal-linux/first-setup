@@ -55,21 +55,21 @@
                     "if": "flathub",
                     "type": "command",
                     "commands": [
-                        "/usr/share/al.getcryst.FirstSetup/vanilla_first-setup/scripts/install-flathub.sh"
+                        "/usr/share/al.getcryst.FirstSetup/vanilla_first_setup/scripts/install-flathub.sh"
                     ]
                 },
 		{
 		    "if": "flathub-beta",
 		    "type": "command",
 		    "commands": [
-		        "/usr/share/al.getcryst.FirstSetup/vanilla_first-setup/scripts/install-flathub-beta.sh"
+		        "/usr/share/al.getcryst.FirstSetup/vanilla_first_setup/scripts/install-flathub-beta.sh"
 		    ] 
 		},
                 {
                     "if": "nix",
                     "type": "command",
                     "commands": [
-                    	"/usr/share/al.getcryst.FirstSetup/vanilla_first-setup/scripts/install-nix.sh"
+                    	"/usr/share/al.getcryst.FirstSetup/vanilla_first_setup/scripts/install-nix.sh"
                     ]
                 }
             ]
@@ -91,7 +91,7 @@
                     "if": "nvidia",
                     "type": "command",
                     "commands": [
-                    	"/usr/share/al.getcryst.FirstSetup/vanilla_first-setup/scripts/install-nvidia.sh"
+                    	"/usr/share/al.getcryst.FirstSetup/vanilla_first_setup/scripts/install-nvidia.sh"
                     ]
                 }
             ]
